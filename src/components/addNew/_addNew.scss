@@ -1,0 +1,29 @@
+.actionBtn {
+    width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    border: 1px solid black;
+    background-color: #fff;
+}
+
+.actionTitle {
+    font-size: 25px;
+    font-weight: 700;
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+.formBtn {
+    padding: 10px 25px;
+    border: 1px solid navy;
+    border-radius: 5px;
+    background-color: rgb(42, 28, 230);
+    box-shadow: 1px 1px 7px 0px rgba(140, 140, 140, 0.75);
+    color: #fff;
+
+    &:hover,
+    &:focus {
+        background-color: yellow;
+        color: black;
+    }
+}

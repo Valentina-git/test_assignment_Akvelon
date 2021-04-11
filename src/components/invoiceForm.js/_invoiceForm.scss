@@ -1,0 +1,50 @@
+.invoiceForm { 
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    display: flex;
+    
+}
+
+.history {
+    border-collapse: collapse;
+    border: 1px solid #ffffff;
+    
+    .history-title {
+        font-size: 20px;
+        font-weight: 700;
+        text-align: left;
+        padding-bottom: 10px;
+    }
+
+    & thead {
+        background-color: rgb(203, 229, 236);
+        color: rgb(20, 113, 145);
+    }
+
+    & th {
+        padding: 15px 10px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    & th:not(:last-child) {
+        border-right: 1px solid #eeeeee;
+    }
+
+    & tbody tr {
+        background-color: #ffffff;
+        border-bottom: 1px solid #eeeeee;
+    }
+
+    & td {
+        padding: 5px 10px;
+        text-align: center;
+         padding: 15px 10px;
+    }
+
+    & td:not(:last-child) {
+        border-right: 1px solid #eeeeee;
+    }
+}
