@@ -3,15 +3,16 @@
   margin: 0 auto;
   margin-bottom: 20px;
   margin-top: 20px;
-
-  border: 1px solid black;
   padding: 30px;
-  background-color: #efefef;
+  background-color: #E0FFFF;
 
   &-title {
     margin-bottom: 20px;
-    padding: 20px;
-    border: 1px solid black;
+    padding: 15px;
+    border-left: 3px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    border-radius: 5px;
+    background-color: #AFEEEE;
     color: rgb(87, 82, 82);
     font-size: 25px;
   }
@@ -23,6 +24,8 @@
 }
 
 .form {
+  background-color: white;
+  padding: 15px;
 
   &-label {
      font-weight: 700;
@@ -33,6 +36,9 @@
   &-input {
     display: block;
     width: 100%;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    padding: 5px;
   }
 
   &-labelText {
@@ -40,19 +46,24 @@
     font-size: 14px;
     line-height: 2.5;
     letter-spacing: 0.07em;
-    // color: #9b9faa;
   }
 
   &-comment {
     width: 100%;
     resize: none;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    padding: 5px;
   }
 
   &-btn {
-    padding: 5px 15px;
-    border: 1px solid navy;
+    display: block;
+    margin: 40px 10px 0px auto;
+    padding: 5px 20px;
+    font-weight: 700;
+    border: 1px solid #32CD32;
     border-radius: 5px;
-    background-color: lightblue;
+    background-color: #00FF7F;
     box-shadow: 1px 1px 7px 0px rgba(140, 140, 140, 0.75);
   }
 

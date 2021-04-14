@@ -1,6 +1,8 @@
 import React from 'react';
+
 import AddNew from '../addNew/AddNew';
-import moment from 'moment';
+import InfoListItem from '../infoListItem/InfoListItem'
+
 
 const InvoiceTable = ({ items, infoLS }) => {
   return (
@@ -26,22 +28,17 @@ const InvoiceTable = ({ items, infoLS }) => {
           </thead>
 
           <tbody>
-            {items.map(item =>  (
-              <tr key={item._id}>
-                <td>{moment(item.date_created, 'DD-MM-YYYY').format('YYYY-MM-DD')}</td>
-                <td>{item.number}</td>
-                <td>{moment(item.date_supplied, 'DD-MM-YYYY').format('YYYY-MM-DD')}</td>
-                <td>{item.comment}</td>
-              </tr>
-            )
-            )}
-            {infoLS.map(item => (
-              <tr key={item._id}>
+            {items.map(item =>  ( 
+              <InfoListItem item={item} key={item._id} />
+            ))}
+            
+            {infoLS && infoLS.map(item =>( 
+               <tr key={item._id}>
                 <td>{item.date_created}</td>
                 <td>{item.number}</td>
                 <td>{item.date_supplied}</td>
                 <td>{item.comment}</td>
-              </tr>
+            </tr>
             ))}
           </tbody>
         </table>

@@ -9,7 +9,6 @@ const CreateInvoice = ({ getUser }) => {
   const history = useHistory();
 
   const validateSchema = yup.object().shape({
-    // number: yup.number().min(3, 'at least 3 symbols').integer(),
     number: yup
     .number()
     .min(3, 'at least 3 symbols')
@@ -48,17 +47,9 @@ const CreateInvoice = ({ getUser }) => {
         >
           {({
             values,
-            touched,
-            errors,
-            dirty,
-            isSubmitting,
-            handleChange,
-            handleBlur,
-            handleSubmit,
-            handleReset,
           }) => {
             return (
-              <Form>
+              <Form className='form'>
                 <label className="form-label">
                 <span className="form-labelText">Number:</span>
                   <Field 
